@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080b14">
+  <meta name="description" content="AAIR — Your AI Workforce">
+  <title>AAIR — Your AI Workforce</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <div class="background"></div>
+
+  <header>
+    <div class="logo"><span>✦</span> AAIR</div>
+
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#agents">Agents</a>
+      <a href="#features">Features</a>
+      <a href="#pricing">Pricing</a>
+    </nav>
+
+    <button class="login-btn" onclick="openLogin()">Login</button>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="badge">✦ YOUR AI WORKFORCE</div>
+
+      <h1>
+        One Workspace.<br>
+        <span>13 AI Agents.</span>
+      </h1>
+
+      <p>
+        Research, code, write, analyze data, plan projects and get work done
+        with your AI workforce.
+      </p>
+
+      <div class="actions">
+        <button class="primary" onclick="startAAIR()">Start with AAIR →</button>
+        <button class="secondary" onclick="scrollToAgents()">Explore Agents</button>
+      </div>
+
+      <div class="creator">Created by ARJUN PUNIYA</div>
+    </section>
+
+    <section id="agents" class="section">
+      <div class="section-title">
+        <div class="badge">AI WORKFORCE</div>
+        <h2>Meet your AI agents.</h2>
+        <p>Specialized agents for different kinds of work.</p>
+      </div>
+
+      <div class="agents-grid" id="agentGrid"></div>
+    </section>
+
+    <section id="features" class="section">
+      <div class="section-title">
+        <div class="badge">PLATFORM</div>
+        <h2>Everything in one workspace.</h2>
+      </div>
+
+      <div class="features">
+        <div class="feature">
+          <span>◈</span>
+          <h3>AI Chat</h3>
+          <p>Persistent AI conversations and workspace context.</p>
+        </div>
+
+        <div class="feature">
+          <span>⌁</span>
+          <h3>Projects</h3>
+          <p>Organize chats, files, goals, tasks and outputs.</p>
+        </div>
+
+        <div class="feature">
+          <span>▣</span>
+          <h3>Files</h3>
+          <p>Work with your documents and datasets.</p>
+        </div>
+
+        <div class="feature">
+          <span>◎</span>
+          <h3>Goals & Tasks</h3>
+          <p>Turn plans into actionable work.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing" class="section">
+      <div class="section-title">
+        <div class="badge">PRICING</div>
+        <h2>Choose your workspace.</h2>
+      </div>
+
+      <div class="pricing-grid">
+        <div class="price-card">
+          <h3>FREE TRIAL</h3>
+          <strong>3 Days</strong>
+          <p>Explore AAIR before choosing a plan.</p>
+          <button onclick="notConfigured()">Get Started</button>
+        </div>
+
+        <div class="price-card featured">
+          <div class="popular">POPULAR</div>
+          <h3>PRO</h3>
+          <strong>₹399<span>/month</span></strong>
+          <p>For serious individual AI workflows.</p>
+          <button onclick="notConfigured()">Choose Pro</button>
+        </div>
+
+        <div class="price-card">
+          <h3>BUSINESS</h3>
+          <strong>₹999<span>/month</span></strong>
+          <p>AI workforce for teams.</p>
+          <button onclick="notConfigured()">Choose Business</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div>✦ AAIR — Your AI Workforce</div>
+    <div>Created by ARJUN PUNIYA</div>
+  </footer>
+
+  <div class="modal" id="loginModal">
+    <div class="modal-box">
+      <button class="close" onclick="closeLogin()">×</button>
+      <h2>Welcome to AAIR</h2>
+      <p>Authentication requires a backend.</p>
+
+      <div class="not-configured">
+        Not configured
+        <small>
+          Add a real authentication backend before enabling login.
+        </small>
+      </div>
+
+      <button class="primary full" onclick="closeLogin()">Close</button>
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
